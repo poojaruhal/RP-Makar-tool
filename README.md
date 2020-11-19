@@ -3,21 +3,21 @@ Replication package for the tool "Makar: A Framework for Multi-source Studies  b
 
 ## Structure
 ```
-Makar_tool/
-    Data/
-    	stackoverfow_questions_with_answers_by_tags.csv
-    	stackoverfow_tags_metrics.csv
-    	apache_mailing_list.csv
-    	mailing_lists_ASF_@dev_@users_1.csv
-    	mailing_lists_ASF_@dev_@users_2.csv
-    	quora.csv
-    	sample_stackoverfow_questions_with_answers_by_tags.csv
-    Schemas/
-    	apache_mailing_lists.json
-    	quora.json
-    	stackoverfow_questions_answers_by_tag.json
-    	stackoverfow_tag_count.json
-    	stackoverfow_tag_metrics.json
+Data/
+	stackoverfow_questions_with_answers_by_tags.csv
+	stackoverfow_tags_metrics.csv
+	apache_mailing_list.csv
+	mailing_lists_ASF_@dev_@users_1.csv
+	mailing_lists_ASF_@dev_@users_2.csv
+	quora.csv
+	sample_stackoverfow_questions_with_answers_by_tags.csv
+    Resultant-SO-Quora-taxonomy.xlsx
+Schemas/
+	apache_mailing_lists.json
+	quora.json
+	stackoverfow_questions_answers_by_tag.json
+	stackoverfow_tag_count.json
+	stackoverfow_tag_metrics.json
 
 LDA-analysis
     LDA_input/
@@ -34,6 +34,8 @@ LDA-analysis
                 all_topics.html
                 Docs/
                 Topics/
+
+Background-Study.pdf
 ```
 
 ## Contents of the Replication Package
@@ -47,6 +49,7 @@ LDA-analysis
     - `mailing_lists_ASF_@dev_@users_2.csv` - mailing list data used in the study as stored in Makar (part 2)
     - `quora.csv` - all quora questions used in the study as stored in Makar
     - `sample_stackoverfow_questions_with_answers_by_tags` - statistically significant sample of `stackoverfow_questions_with_answers_by_tags.csv` used in the study
+    - `Resultant-SO-Quora-taxonomy` - Result of manual analysis of Stack overflow and Quora sample set
 
 - **Schemas/**
     - `apache_mailing_lists.json` - data schema used in Makar to store mailing list data
@@ -68,3 +71,5 @@ LDA-analysis
             - `all_topics.html`
             - `Docs/`
             - `Topics/`
+
+- **Background-Study.pdf** - Literature survey of challenges researchers face in mining the studies that investigate developer information needs during program comprehension tasks.
